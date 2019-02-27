@@ -4,6 +4,12 @@
     Author     : andreas
 --%>
 
-        <footer><h1>Footer</h1></footer>
-    </body>
+<footer class="footer">
+    <div class="footerContent">
+            © Copyright 2018 - Andreas Vikke. All rights reserved.
+    </div>
+</footer>
+
+
+</body>
 </html>
