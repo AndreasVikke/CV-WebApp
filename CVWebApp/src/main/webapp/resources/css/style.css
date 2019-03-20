@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+  --pc-content-width: 65%;
+  --main-color: #337abb;
+}
+
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    background-color: #f5f5f5;
+    font-family: 'Raleway', sans-serif;
+}
+body hr {
+    border: 0; 
+    height: 1px; 
+    background: #e4e4e4;
+    margin: 0;
+}
+body h1 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+body .phoneHide::before {
+    content: "+45 2843 8851";
+}
+body .emailHide::before {
+    content: "AndreasVikke@gmail.com";
+}
+
+
+/* Header Container  */
+.header {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4rem;
+}
+.header>.headerContent {
+    width: var(--pc-content-width);
+    margin: 0 auto;
+}
+.header>.headerContent>ul {
+    display: flex;
+}
+.header>.headerContent>ul>li>a {
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: block;
+}
+.header>.headerContent>ul>.active {
+    background-color: var(--main-color);
+}
+.header>.headerContent>ul>.active>a {
+    color: #fff !important;
+}
+.header>.headerContent>ul>li {
+    flex: 1 1 100%;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+.header>.headerContent>ul>li:hover {
+    background-color: var(--main-color);
+    transition: all .2s ease-in-out;
+}
+.header>.headerContent>ul>li:hover>a {
+    color: #fff;
+}
+.header>.headerContent>ul>li>i {
+    margin-right: 10px;
+}
+
+
+/* Main Container  */
+.mainContainer {
+    width: var(--pc-content-width);
+    margin: 0 auto;
+}
+.mainContainer::after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+
+/* Head Container  */
+.mainContainer>.mainContainerHead {
+    width: 100%;
+    position: relative;
+    padding: 1rem 0;
+}
+.mainContainer>.mainContainerHead>h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+/* Sidebar Container  */
+.mainContainer>.mainContainerSidebar {
+    width: 33.33333333%;
+    padding-right: 15px;
+    float: left;
+}
+.mainContainer>.mainContainerSidebar>.sidebarContent {
+    background: #fff;
+}
+.mainContainer>.mainContainerSidebar>.sidebarContent>h1 {
+    padding: 20px;
+}
+.mainContainer>.mainContainerSidebar>.sidebarContent>.sidebarImage {
+    width: 100%;
+    height: 300px;
+    background: url(../img/Andreas.jpg);
+    background-position: center center;
+}
+.mainContainer>.mainContainerSidebar>.sidebarContent>ul {
+    padding: 20px;
+}
+.mainContainer>.mainContainerSidebar>.sidebarContent>ul>li>p {
+    line-height: 35px;
+}
+.mainContainer>.mainContainerSidebar>.sidebarContent>ul>li>p>span {
+    width: 35%;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+/* Page Container  */
+.mainContainer>.mainContainerPage {
+    width: 66.6666667%;
+    padding-left: 15px;
+    float: left;
+}
+.mainContainer>.mainContainerPage>.pageContent {
+    background: #fff;
+}
+.mainContainer>.mainContainerPage>.pageContent>h1 {
+    padding: 20px;
+}
+.mainContainer>.mainContainerPage>.pageContent>p {
+    padding: 20px;
+    line-height: 24px;
+}
+
+/* Footer Container  */
+.footer {
+    width: 100%;
+    background: #1a1a1a;
+    color: #808080;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.footer>.footerContent {
+    width: var(--pc-content-width);
+    margin: 0 auto;
+}
